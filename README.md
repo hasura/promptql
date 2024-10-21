@@ -1,1 +1,1 @@
-# promptql
+# PromptQL
