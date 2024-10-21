@@ -1,0 +1,15 @@
+version: '3'
+services:
+  promptql-playground:
+    image: us-east4-docker.pkg.dev/promptql-execution-service/promptql-public/promptql-playground-local
+    ports:
+      - "5000:5000"
+    environment:
+      OTEL_EXPORTER_OTLP_ENDPOINT: ${OTEL_EXPORTER_OTLP_ENDPOINT:-http://host.docker.internal:4317}
+      ENGINE_URL: ${HASURA_DDN_URL:-http://host.docker.internal:3000/v1/sql}
+      PROMPTQL_URI: ${PROMPTQL_URI:-wss://runtime.promptql.pro.hasura.io}
+      PROMPTQL_SECRET_KEY: ${PROMPTQL_SECRET_KEY}
+      LLM: ${LLM:-anthropic}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY}
+      CORS_ORIGINS: ${CORS_ORIGINS:-https://console.arusah.com,https://console.hasura.io}
+      # OPENAI_API_KEY: ${OPENAI_API_KEY}

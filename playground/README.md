@@ -22,6 +22,8 @@ Example, with DDN running locally and anthropic as LLM provider.
 PROMPTQL_SECRET_KEY=01234567-890a-bcde-f012-3456789abcde HASURA_DDN_URL=http://host.docker.internal:3080/v1/sql LLM=anthropic ANTHROPIC_API_KEY=sk-ant-api03-... docker-compose -f staging.compose.yaml up
 ```
 
+Replace the final line with `docker-compose -f production.compose.yaml up` if using the stable PromptQL runtime.
+
 ## Playground Frontend
 
 You can access the playground frontend at https://console.arusah.com/local/chat (staging) or https://console.hasura.io/local/chat (stable).
