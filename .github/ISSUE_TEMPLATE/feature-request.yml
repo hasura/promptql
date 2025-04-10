@@ -1,0 +1,39 @@
+name: Feature Request
+description: Suggest new features or enhancements for Hasura PromptQL.
+title: "[Feature Request] A concise title for your feature request"
+labels:
+  - enhancement
+
+body:
+  - type: textarea
+    id: describe-issue
+    attributes:
+      label: "Describe the feature"
+      description: "Provide a clear and concise description of the feature or enhancement you are requesting. Help us understand why it’s important to you!"
+      placeholder: "The feature request is..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: "Use case or motivation"
+      description: "Explain the use case or reason behind your feature request. Why do you think this feature is necessary or useful?"
+      placeholder: "Use case..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: "Additional context (optional)"
+      description: "Any extra context about the feature request can go here. This could include how you envision the feature working, or possible examples. Feel free to add any helpful details."
+      placeholder: "Additional context..."
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        --- 
+        *We appreciate your ideas and input. Features like these help make Hasura PromptQL even better!*

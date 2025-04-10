@@ -1,0 +1,57 @@
+name: Bug Report
+description: Report a bug in Hasura PromptQL.
+title: "[Bug] A concise title for the bug"
+labels:
+  - bug
+
+body:
+  - type: textarea
+    id: describe-issue
+    attributes:
+      label: "Describe the bug"
+      description: "A clear and concise description of the bug you're encountering. Be specific about what went wrong."
+      placeholder: "The bug is..."
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: "Environment"
+      description: "Describe the environment where the bug occurred (e.g., version, OS, browser)."
+      placeholder: "Environment details..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: "Steps to reproduce"
+      description: "Provide the steps to reproduce the bug. This helps us replicate and identify the problem."
+      placeholder: "Step-by-step instructions..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: "Expected behavior"
+      description: "What should happen when everything works correctly? This helps us understand the discrepancy."
+      placeholder: "Expected behavior..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: "Additional context (optional)"
+      description: "Any other context you think might help us fix the bug faster. Screenshots or error logs are extremely helpful!"
+      placeholder: "Additional context..."
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        --- 
+        *We truly appreciate your bug reports! The more detailed, the faster we can get it fixed!*
