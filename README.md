@@ -4,7 +4,7 @@ Welcome to the official issue tracker for **Hasura PromptQL**.
 
 ## What is PromptQL?
 
-Hasura PromptQL is a natural language to data query interface that lets you ask questions about your data in plain English and get accurate, structured responses. It’s built to integrate seamlessly with Hasura DDN, leveraging metadata and your schema to generate insights — and act — across all your datasources.
+[Hasura PromptQL](https://hasura.io) is a natural language to data query interface that lets you ask questions about your data in plain English and get accurate, structured responses. It’s built to integrate seamlessly with Hasura DDN, leveraging metadata and your schema to generate insights — and act — across all your datasources.
 
 ## Where to Discuss PromptQL
 
